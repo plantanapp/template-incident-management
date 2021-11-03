@@ -1,0 +1,365 @@
+{
+  "InputFields": [
+    {
+      "Id": 20,
+      "Name": "Status",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 8,
+      "WorkflowId": 4,
+      "IsDeleted": false,
+      "Required": true
+    },
+    {
+      "Id": 21,
+      "Name": "Hours",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 4,
+      "IsDeleted": false,
+      "Required": true
+    },
+    {
+      "Id": 22,
+      "Name": "StatusIdsToEnforceOn",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 4,
+      "IsDeleted": false,
+      "Required": true
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 23,
+      "Name": "TicketsAffectedJSON",
+      "DefaultValue": "[SLA_Entries:JSON]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 4,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 4,
+  "UniqueId": "a8c2d6af-cd26-45b8-a2d3-dbf39aa61fdf",
+  "EnvironmentId": 1,
+  "Name": "Enforce SLA",
+  "Description": "Specify the new status of a ticket that needs to change automatically after a number of hours. Also Specify status ids comma separated, so the workflow only checks tickets in that status.",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 8,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 15,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadUser",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 53,
+            "Name": "Id",
+            "Value": "1",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 15,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 54,
+            "Name": "Portal",
+            "Value": "0",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 15,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_158tonu"
+      },
+      {
+        "Id": 16,
+        "Description": "Get Only Tickets that are in Status = [StatusIdsToEnforceOn] and didn't have a modification in [Hours]",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.ReadAllEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 55,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 56,
+            "Name": "Where",
+            "Value": "Status in ([StatusIdsToEnforceOn]) and DateDiff(hour,isnull(LastModifiedDate,CreatedDate), SYSDATETIMEOFFSET()) >= [Hours]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 57,
+            "Name": "RowLimit",
+            "Value": "1000",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 58,
+            "Name": "OrderByClauses",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 59,
+            "Name": "OutputToken",
+            "Value": "SLA_Entries",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 60,
+            "Name": "OnError",
+            "Value": {
+              "Id": 9,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 16,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1ny8f66"
+      },
+      {
+        "Id": 17,
+        "Description": "Setup a InMemory Enitity",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadEntitiesFromJson",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 61,
+            "Name": "JsonModel",
+            "Value": "[SLA_Entries:JSON]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 17,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 62,
+            "Name": "EntityName",
+            "Value": "EntriesToEnforceSLA",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 17,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 63,
+            "Name": "OnError",
+            "Value": {
+              "Id": 10,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 17,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 64,
+            "Name": "EnforceISODateTime",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 17,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1a8b9av"
+      },
+      {
+        "Id": 18,
+        "Description": "Change Status",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "ExecuteActionsOnEntityList",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 65,
+            "Name": "EntityName",
+            "Value": "EntriesToEnforceSLA",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 66,
+            "Name": "Filters",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 67,
+            "Name": "ContextBehavior",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 75,
+            "Name": "ActionList",
+            "Value": {
+              "Id": 11,
+              "EventName": "click",
+              "Actions": [
+                {
+                  "Id": 19,
+                  "Description": null,
+                  "ActionErrorMessage": null,
+                  "Condition": null,
+                  "ActionType": "PlantAnApp.ExecuteWorkflow.d5ef6c6792bb4c789678bebb99c74745",
+                  "OrderIndex": 0,
+                  "ActionParameters": [
+                    {
+                      "Id": 68,
+                      "Name": "InputHelpText",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 69,
+                      "Name": "Ticket",
+                      "Value": "[EntriesToEnforceSLA:Id]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 70,
+                      "Name": "NewStatus",
+                      "Value": "[Status:Id]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 71,
+                      "Name": "Details",
+                      "Value": "Changed by System on [Date:Now]",
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 72,
+                      "Name": "OutputHelpText",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 73,
+                      "Name": "Log",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    },
+                    {
+                      "Id": 74,
+                      "Name": "Activity",
+                      "Value": null,
+                      "ParentParameterId": null,
+                      "IsExpression": false,
+                      "ActionId": 19,
+                      "OrderIndex": 0
+                    }
+                  ],
+                  "DiagramUID": null
+                }
+              ]
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 76,
+            "Name": "ContinueOnError",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 77,
+            "Name": "OnError",
+            "Value": {
+              "Id": 12,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 18,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_05jx4yl"
+      }
+    ]
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2021-10-27T11:51:38.071437+00:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2021-10-27T11:51:38.071437+00:00",
+  "DiagramXML": null,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
