@@ -1,0 +1,327 @@
+{
+  "InputFields": [
+    {
+      "Id": 1,
+      "Name": "CurrentUser",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Integer",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 2,
+      "Name": "TicketID",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 9,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 3,
+      "Name": "ActivityCode",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 4,
+      "Name": "Detail",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "LargeText",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 5,
+      "Name": "Name",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 6,
+      "Name": "ActivityID",
+      "DefaultValue": "[ActivityID]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 1,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 1,
+  "UniqueId": "91681d36-8213-4874-869c-c7643de4dc1f",
+  "EnvironmentId": 1,
+  "Name": "Log Ticket Activity",
+  "Description": "Pass in active user and activity and activity is created and associated to ticket.",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 1,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 1,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "LoadUser",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1,
+            "Name": "Id",
+            "Value": "1",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2,
+            "Name": "Portal",
+            "Value": "0",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_16bt3lo"
+      },
+      {
+        "Id": 2,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "RunSql",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 3,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 4,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 5,
+            "Name": "SqlQuery",
+            "Value": "SELECT Id,Name FROM app.ActivityType WHERE ActivityCode = @ActivityCode",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 6,
+            "Name": "BindTokens",
+            "Value": [
+              {
+                "value": "[ActivityCode]",
+                "name": "ActivityCode"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 7,
+            "Name": "OutputTokenName",
+            "Value": "Type",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 8,
+            "Name": "ExtractColumns",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 9,
+            "Name": "OnError",
+            "Value": {
+              "Id": 2,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 10,
+            "Name": "ShowErrors",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 2,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0pg9cyp"
+      },
+      {
+        "Id": 3,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.CreateEntity.2ade721a-ae65-449c-b61a-1c4955901aeb",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 11,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 12,
+            "Name": "User",
+            "Value": "[CurrentUser]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 13,
+            "Name": "Name",
+            "Value": "[Name=[Type:Name]]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 14,
+            "Name": "Details",
+            "Value": "[Detail]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 15,
+            "Name": "Type",
+            "Value": "[Type:ID]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 16,
+            "Name": "OutputToken",
+            "Value": "ActivityID",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 17,
+            "Name": "OnError",
+            "Value": {
+              "Id": 3,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 3,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0qg662q"
+      },
+      {
+        "Id": 4,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.LinkChildEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3a7e6f072-bb08-4cfe-acf4-a437b083e9dc",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 18,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 4,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 19,
+            "Name": "ParentRecordId",
+            "Value": "[TicketID:Id]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 4,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 20,
+            "Name": "ChildRecordId",
+            "Value": "[ActivityID]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 4,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0g7w3xk"
+      }
+    ]
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2021-10-27T11:22:26.2576127+00:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2021-10-27T11:22:26.2576127+00:00",
+  "DiagramXML": null,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
