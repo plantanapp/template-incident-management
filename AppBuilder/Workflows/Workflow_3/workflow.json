@@ -1,0 +1,302 @@
+{
+  "InputFields": [
+    {
+      "Id": 15,
+      "Name": "Ticket",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 9,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": true
+    },
+    {
+      "Id": 16,
+      "Name": "NewStatus",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "EntityRef",
+      "EntityVersionId": 8,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": true
+    },
+    {
+      "Id": 17,
+      "Name": "Details",
+      "DefaultValue": null,
+      "Type": "Input",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "OutputFields": [
+    {
+      "Id": 18,
+      "Name": "Log",
+      "DefaultValue": "[LogName]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": false
+    },
+    {
+      "Id": 19,
+      "Name": "Activity",
+      "DefaultValue": "[NewActivityId]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 3,
+      "IsDeleted": false,
+      "Required": false
+    }
+  ],
+  "Id": 3,
+  "UniqueId": "d5ef6c67-92bb-4c78-9678-bebb99c74745",
+  "EnvironmentId": 1,
+  "Name": "Change Ticket Status",
+  "Description": "Provide the Ticket and the new Status. Details are optional.",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 5,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 11,
+        "Description": "Get the ticket status before it gets changed",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.ReadEntity.002efa19-dbdb-4649-8fbb-4bf4a91de9e3",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 34,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 11,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 35,
+            "Name": "RecordId",
+            "Value": "[Ticket:Status]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 11,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 36,
+            "Name": "OutputToken",
+            "Value": "OldStatus",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 11,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 37,
+            "Name": "OnError",
+            "Value": {
+              "Id": 6,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 11,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_1uwwwye"
+      },
+      {
+        "Id": 12,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.PartialUpdateEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
+        "OrderIndex": 1,
+        "ActionParameters": [
+          {
+            "Id": 38,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 12,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 39,
+            "Name": "RecordId",
+            "Value": "[Ticket:Id]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 12,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 40,
+            "Name": "UpdatedProperties",
+            "Value": [
+              {
+                "PropertyName": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Status"
+                },
+                "PropertyValue": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "[NewStatus:Id]"
+                }
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 12,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 43,
+            "Name": "OnError",
+            "Value": {
+              "Id": 7,
+              "EventName": "OnError",
+              "Actions": []
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 12,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_099i23x"
+      },
+      {
+        "Id": 13,
+        "Description": "Compute the log Name based on the Old Status and New Status",
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "InjectData",
+        "OrderIndex": 2,
+        "ActionParameters": [
+          {
+            "Id": 44,
+            "Name": "Data",
+            "Value": [
+              {
+                "value": "Status Changed from [OldStatus:Name] to [NewStatus:Name]",
+                "name": "LogName"
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 13,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0qycybf"
+      },
+      {
+        "Id": 14,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "PlantAnApp.ExecuteWorkflow.91681d3682134874869cc7643de4dc1f",
+        "OrderIndex": 3,
+        "ActionParameters": [
+          {
+            "Id": 45,
+            "Name": "InputHelpText",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 46,
+            "Name": "CurrentUser",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 47,
+            "Name": "TicketID",
+            "Value": "[Ticket:Id]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 48,
+            "Name": "ActivityCode",
+            "Value": "3",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 49,
+            "Name": "Detail",
+            "Value": "[Details]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 50,
+            "Name": "Name",
+            "Value": "[LogName]",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 51,
+            "Name": "OutputHelpText",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 52,
+            "Name": "ActivityID",
+            "Value": "NewActivityId",
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 14,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0i2aypd"
+      }
+    ]
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2021-10-27T11:46:46.4560497+00:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2021-10-27T11:46:46.4560497+00:00",
+  "DiagramXML": null,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}
