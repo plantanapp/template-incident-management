@@ -1,0 +1,186 @@
+[
+  {
+    "Id": 17,
+    "UniqueId": "773dfed5-8c57-4d39-9058-536c5d012aca",
+    "EntityVersionId": 9,
+    "Name": "Subject",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 18,
+    "UniqueId": "74a4087c-7e0f-4439-ac74-0d5661bbec30",
+    "EntityVersionId": 9,
+    "Name": "Details",
+    "Type": {
+      "Id": "LargeText",
+      "Name": "Large Text",
+      "InputType": {
+        "Id": "LargeText",
+        "Name": "Large Text",
+        "ValueType": "String",
+        "Length": 2147483647,
+        "Icon": "notes"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  },
+  {
+    "Id": 19,
+    "UniqueId": "0900b82d-70ad-4388-8383-2919e7363636",
+    "EntityVersionId": 9,
+    "Name": "First Name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 3
+  },
+  {
+    "Id": 20,
+    "UniqueId": "b967a414-66a2-4b43-9bc2-182bb9954036",
+    "EntityVersionId": 9,
+    "Name": "Last Name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": true,
+    "OrderIndex": 4
+  },
+  {
+    "Id": 21,
+    "UniqueId": "84186cb4-a988-475a-99cc-2ef74d81d344",
+    "EntityVersionId": 9,
+    "Name": "Email",
+    "Type": {
+      "Id": "Email",
+      "Name": "Email",
+      "InputType": {
+        "Id": "Email",
+        "Name": "Email",
+        "ValueType": "String",
+        "Length": 320,
+        "Icon": "mail_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": true,
+    "OrderIndex": 5
+  },
+  {
+    "Id": 22,
+    "UniqueId": "fc9a60b9-97fd-4000-9fbd-c29fc91e83ee",
+    "EntityVersionId": 9,
+    "Name": "Phone",
+    "Type": {
+      "Id": "Phone",
+      "Name": "Phone",
+      "InputType": {
+        "Id": "Phone",
+        "Name": "Phone",
+        "ValueType": "String",
+        "Length": 15,
+        "Icon": "phone"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 6
+  },
+  {
+    "Id": 23,
+    "UniqueId": "9e66feef-3dbf-441c-bded-27d7e48f5ce9",
+    "EntityVersionId": 9,
+    "Name": "Status",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 8,
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": false,
+    "IsFilterable": true,
+    "IsSortable": true,
+    "OrderIndex": 7
+  },
+  {
+    "Id": 24,
+    "UniqueId": "5eaffb89-a4ff-46f8-b53a-bdd7c8d811ca",
+    "EntityVersionId": 9,
+    "Name": "Support Agent",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 1,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": true,
+    "IsFilterable": true,
+    "IsSortable": true,
+    "OrderIndex": 11
+  }
+]
