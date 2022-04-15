@@ -1,0 +1,27 @@
+{
+  "Name": "AnErroringApi",
+  "Description": "An api endpoint that generate an error to review in the logs.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadAllEntity.2ade721a-ae65-449c-b61a-1c4955901aeb",
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "Where": "",
+        "RowLimit": "1000",
+        "OrderByClauses": [],
+        "OutputToken": "Records",
+        "OnError": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
