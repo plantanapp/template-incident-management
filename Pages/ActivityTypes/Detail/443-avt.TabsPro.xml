@@ -1,4 +1,4 @@
-<module type="avtTabsPro" version="05.17.04.00">
+<module type="avtTabsPro" version="05.20.03.00">
     <contentKey />
     <moduleID>443</moduleID>
     <alignment />
@@ -26,7 +26,7 @@
     <tabmodulesettings />
     <definition>avt.TabsPro</definition>
     <moduledefinition>avt.TabsPro</moduledefinition>
-    <content type="avtTabsPro" version="05.17.04.00"><![CDATA[&lt;TabsPro&gt;
+    <content type="avtTabsPro" version="05.20.03.00"><![CDATA[&lt;TabsPro&gt;
   &lt;Theme&gt;ui-lightness&lt;/Theme&gt;
   &lt;TabsLayout&gt;HorizontalTop&lt;/TabsLayout&gt;
   &lt;TabsFullWidth&gt;False&lt;/TabsFullWidth&gt;
@@ -59,7 +59,7 @@
   &lt;Modal_DisplayTitle /&gt;
   &lt;Modal_DisplayWidth&gt;80%&lt;/Modal_DisplayWidth&gt;
   &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
-  &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
+  &lt;WidgetProvider&gt;{&quot;name&quot;:&quot;WidgetProvider&quot;,&quot;value&quot;:&quot;Bootstrap5&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/WidgetProvider&gt;
   &lt;OpenAction&gt;{&quot;name&quot;:&quot;OpenAction&quot;,&quot;value&quot;:&quot;Click&quot;,&quot;inherit&quot;:true,&quot;canOverride&quot;:true}&lt;/OpenAction&gt;
   &lt;Tabs&gt;
     &lt;Tab&gt;
@@ -71,7 +71,7 @@
       &lt;IconUrl /&gt;
       &lt;IconClass /&gt;
       &lt;DisplayAccordion&gt;False&lt;/DisplayAccordion&gt;
-      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;ViewOrder&gt;1&lt;/ViewOrder&gt;
       &lt;TabUrl /&gt;
       &lt;StackDirection&gt;Vertical&lt;/StackDirection&gt;
       &lt;DefaultTab&gt;True&lt;/DefaultTab&gt;
@@ -83,7 +83,13 @@
       &lt;Modules&gt;
         &lt;Module&gt;
           &lt;ModuleId&gt;442&lt;/ModuleId&gt;
-          &lt;ModuleTitle&gt;View Form&lt;/ModuleTitle&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
+          &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
+          &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
+        &lt;/Module&gt;
+        &lt;Module&gt;
+          &lt;ModuleId&gt;442&lt;/ModuleId&gt;
+          &lt;ModuleTitle&gt;Details Form&lt;/ModuleTitle&gt;
           &lt;ModuleOrder&gt;1&lt;/ModuleOrder&gt;
           &lt;DisplayTitle&gt;False&lt;/DisplayTitle&gt;
         &lt;/Module&gt;

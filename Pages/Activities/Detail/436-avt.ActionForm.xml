@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.17.08.00">
+<module type="ActionForm" version="05.20.132.00">
     <contentKey />
     <moduleID>436</moduleID>
     <alignment />
@@ -17,7 +17,7 @@
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
     <modulepermissions />
-    <title>View Form</title>
+    <title>Details Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>2cc9ccc8-b50c-4122-8df6-d1ada1ac3889</uniqueId>
     <visibility>Maximized</visibility>
@@ -26,7 +26,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.17.08.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.20.132.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[107]]&gt;&lt;/Id&gt;
@@ -100,10 +100,10 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;View Form&lt;/Title&gt;
-    &lt;CssName&gt;view-form&lt;/CssName&gt;
-    &lt;Version&gt;5.17.0&lt;/Version&gt;
-    &lt;Build&gt;5.17.8&lt;/Build&gt;
+    &lt;Title&gt;Details Form&lt;/Title&gt;
+    &lt;CssName&gt;details-form&lt;/CssName&gt;
+    &lt;Version&gt;5.20.0&lt;/Version&gt;
+    &lt;Build&gt;5.20.132&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -120,12 +120,12 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;436&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.17.8&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.20.132&lt;/ModuleVersion&gt;
     &lt;TabId&gt;55&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
-    &lt;FormTemplate&gt;Material&lt;/FormTemplate&gt;
-    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/Material&lt;/FormTemplateFolder&gt;
+    &lt;FormTemplate&gt;bootstrap5&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap5&lt;/FormTemplateFolder&gt;
     &lt;ModuleId&gt;436&lt;/ModuleId&gt;
     &lt;IsDebug&gt;False&lt;/IsDebug&gt;
     &lt;EnableReports&gt;False&lt;/EnableReports&gt;
@@ -139,22 +139,18 @@
     &lt;PopupWidth&gt;600&lt;/PopupWidth&gt;
     &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
     &lt;PopupHeight /&gt;
-    &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
     &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
     &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
     &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
     &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
     &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
     &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
-    &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
     &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn436&lt;/BaseId&gt;
     &lt;PopupName /&gt;
-    &lt;LeftSidebarHtml /&gt;
-    &lt;RightSidebarHtml /&gt;
-    &lt;RootClasses /&gt;
+    &lt;RootClasses&gt;detail-form-root&lt;/RootClasses&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
   &lt;/Settings&gt;
@@ -164,7 +160,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:HelpAgents] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:45.097&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.04&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to view this item.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;436&lt;/ModuleId&gt;
@@ -179,7 +175,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:45.103&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.04&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;original:User&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Name&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Details&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Type&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;436&lt;/ModuleId&gt;
@@ -193,7 +189,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.2ade721a-ae65-449c-b61a-1c4955901aeb&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:45.11&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.057&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:ActivityId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;436&lt;/ModuleId&gt;
@@ -208,7 +204,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.42cf08d7-23c9-4b5f-96b6-7991a693af9c&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:45.113&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.057&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:User]&quot;,&quot;OutputToken&quot;:&quot;originalUser&quot;,&quot;BypassPermissions&quot;:&quot;1&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;436&lt;/ModuleId&gt;
@@ -223,7 +219,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.ReadEntity.8157d7a6-3f03-453c-af1c-cb13610a934c&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:45.12&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.057&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[original:Type]&quot;,&quot;OutputToken&quot;:&quot;originalActivityType&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;436&lt;/ModuleId&gt;

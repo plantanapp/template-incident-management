@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.17.08.00">
+<module type="ActionForm" version="05.20.132.00">
     <contentKey />
     <moduleID>466</moduleID>
     <alignment />
@@ -17,7 +17,7 @@
     <iconfile />
     <inheritviewpermissions>true</inheritviewpermissions>
     <modulepermissions />
-    <title>Activities Add Existing Form</title>
+    <title>Link Existing Activities Form</title>
     <startdate>0001-01-01T00:00:00</startdate>
     <uniqueId>b8a56de6-f093-4284-a2c8-96b478b477be</uniqueId>
     <visibility>Maximized</visibility>
@@ -26,7 +26,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.17.08.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.20.132.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[157]]&gt;&lt;/Id&gt;
@@ -93,7 +93,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-primary&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -119,7 +119,7 @@
       &lt;ButtonType&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
         &lt;Expression /&gt;
-        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;Value&gt;btn-primary&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
@@ -143,10 +143,10 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;Activities Add Existing Form&lt;/Title&gt;
-    &lt;CssName&gt;activities-add-existing-form&lt;/CssName&gt;
-    &lt;Version&gt;5.17.0&lt;/Version&gt;
-    &lt;Build&gt;5.17.8&lt;/Build&gt;
+    &lt;Title&gt;Link Existing Activities Form&lt;/Title&gt;
+    &lt;CssName&gt;link-existing-activities-form&lt;/CssName&gt;
+    &lt;Version&gt;5.20.0&lt;/Version&gt;
+    &lt;Build&gt;5.20.132&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -163,12 +163,12 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;466&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.17.8&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.20.132&lt;/ModuleVersion&gt;
     &lt;TabId&gt;63&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
-    &lt;FormTemplate&gt;Material&lt;/FormTemplate&gt;
-    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/Material&lt;/FormTemplateFolder&gt;
+    &lt;FormTemplate&gt;bootstrap5&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap5&lt;/FormTemplateFolder&gt;
     &lt;ModuleId&gt;466&lt;/ModuleId&gt;
     &lt;IsDebug&gt;False&lt;/IsDebug&gt;
     &lt;EnableReports&gt;False&lt;/EnableReports&gt;
@@ -182,21 +182,17 @@
     &lt;PopupWidth&gt;600&lt;/PopupWidth&gt;
     &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
     &lt;PopupHeight /&gt;
-    &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
     &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
     &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
     &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
     &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
     &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
     &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
-    &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
     &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn466&lt;/BaseId&gt;
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
-    &lt;LeftSidebarHtml /&gt;
-    &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
@@ -207,7 +203,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.557&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.867&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -224,7 +220,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.567&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.9&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -239,7 +235,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.57&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.9&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add from existing Activities&quot;},{&quot;name&quot;:&quot;parentId&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -253,7 +249,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.LinkChildEntity.69e2f7f9-9318-4f99-b4be-57f0b6c672c3a7e6f072-bb08-4cfe-acf4-a437b083e9dc&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.56&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.883&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ParentRecordId&quot;:&quot;[QueryString:TicketId]&quot;,&quot;ChildRecordId&quot;:&quot;[r_ActivityId]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -271,7 +267,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:TicketId=] == &#39;&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.573&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.9&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;No Ticket filter was set.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -285,7 +281,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.563&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.883&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;2177482c-1e37-4dda-bbff-db163e6e98ba&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -300,7 +296,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;RunSql&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.573&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.917&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ConnectionString&quot;:&quot;&quot;,&quot;ExtractColumns&quot;:[{&quot;name&quot;:&quot;Id&quot;,&quot;value&quot;:&quot;parentId&quot;}],&quot;SqlQuery&quot;:&quot;SELECT [Id] FROM [app].[Ticket] WHERE [Id] = @p0&quot;,&quot;BindTokens&quot;:[{&quot;name&quot;:&quot;p0&quot;,&quot;value&quot;:&quot;[QueryString:TicketId]&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -314,7 +310,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.567&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.883&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;b8a56de6-f093-4284-a2c8-96b478b477be&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;
@@ -330,7 +326,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[parentId] == &#39;&#39;&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:14:01.577&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:50:04.917&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;Invalid Ticket filter value set.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;466&lt;/ModuleId&gt;

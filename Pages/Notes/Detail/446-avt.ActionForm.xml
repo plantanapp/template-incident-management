@@ -1,4 +1,4 @@
-<module type="ActionForm" version="05.17.08.00">
+<module type="ActionForm" version="05.20.132.00">
     <contentKey />
     <moduleID>446</moduleID>
     <alignment />
@@ -26,7 +26,7 @@
     <tabmodulesettings />
     <definition>Action Form</definition>
     <moduledefinition>avt.Action Form</moduledefinition>
-    <content type="ActionForm" version="05.17.08.00"><![CDATA[&lt;ActionForm&gt;
+    <content type="ActionForm" version="05.20.132.00"><![CDATA[&lt;ActionForm&gt;
   &lt;Fields&gt;
     &lt;Field&gt;
       &lt;Id&gt;&lt;![CDATA[118]]&gt;&lt;/Id&gt;
@@ -190,7 +190,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-primary&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -216,7 +216,7 @@
       &lt;ButtonType&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
         &lt;Expression /&gt;
-        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;Value&gt;btn-primary&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
@@ -257,7 +257,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;button&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Normal&quot;,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Left&quot;,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ButtonType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-primary&quot;,&quot;Parameters&quot;:{}}}&lt;/InputData&gt;
       &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
       &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
       &lt;ButtonSize&gt;
@@ -283,7 +283,7 @@
       &lt;ButtonType&gt;
         &lt;IsExpression&gt;False&lt;/IsExpression&gt;
         &lt;Expression /&gt;
-        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;Value&gt;btn-primary&lt;/Value&gt;
         &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
       &lt;/ButtonType&gt;
       &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
@@ -307,10 +307,10 @@
     &lt;/Field&gt;
   &lt;/Fields&gt;
   &lt;Settings&gt;
-    &lt;Title&gt;Form&lt;/Title&gt;
-    &lt;CssName&gt;form&lt;/CssName&gt;
-    &lt;Version&gt;5.17.0&lt;/Version&gt;
-    &lt;Build&gt;5.17.8&lt;/Build&gt;
+    &lt;Title&gt;Note Form&lt;/Title&gt;
+    &lt;CssName&gt;note-form&lt;/CssName&gt;
+    &lt;Version&gt;5.20.0&lt;/Version&gt;
+    &lt;Build&gt;5.20.132&lt;/Build&gt;
     &lt;CultureCode&gt;en&lt;/CultureCode&gt;
     &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
     &lt;FrontEndTemplate /&gt;
@@ -327,12 +327,12 @@
     &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
     &lt;OpenFormMode&gt;Manual&lt;/OpenFormMode&gt;
     &lt;ModuleId&gt;446&lt;/ModuleId&gt;
-    &lt;ModuleVersion&gt;5.17.8&lt;/ModuleVersion&gt;
+    &lt;ModuleVersion&gt;5.20.132&lt;/ModuleVersion&gt;
     &lt;TabId&gt;58&lt;/TabId&gt;
     &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
     &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
-    &lt;FormTemplate&gt;Material&lt;/FormTemplate&gt;
-    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/Material&lt;/FormTemplateFolder&gt;
+    &lt;FormTemplate&gt;bootstrap5&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap5&lt;/FormTemplateFolder&gt;
     &lt;ModuleId&gt;446&lt;/ModuleId&gt;
     &lt;IsDebug&gt;False&lt;/IsDebug&gt;
     &lt;EnableReports&gt;False&lt;/EnableReports&gt;
@@ -346,21 +346,17 @@
     &lt;PopupWidth&gt;600&lt;/PopupWidth&gt;
     &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
     &lt;PopupHeight /&gt;
-    &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
     &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
     &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
     &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
     &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
     &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
     &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
-    &lt;Background /&gt;
     &lt;TextColor /&gt;
     &lt;Padding&gt;0&lt;/Padding&gt;
     &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
     &lt;BaseId&gt;dnn446&lt;/BaseId&gt;
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
-    &lt;LeftSidebarHtml /&gt;
-    &lt;RightSidebarHtml /&gt;
     &lt;RootClasses /&gt;
     &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
@@ -371,7 +367,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:HelpAgents] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.413&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.05&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -388,7 +384,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:HelpAgents] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.443&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.067&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -405,7 +401,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
       &lt;Condition&gt;![h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:HelpAgents] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.48&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to add items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -420,7 +416,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.49&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Add Note&quot;},{&quot;name&quot;:&quot;original:Subject&quot;,&quot;value&quot;:&quot;&quot;},{&quot;name&quot;:&quot;original:Note&quot;,&quot;value&quot;:&quot;&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -436,14 +432,15 @@
       &lt;ActionType&gt;InjectData&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;!string.IsNullOrWhiteSpace([QueryString:NoteId=])&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.497&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Data&quot;:[{&quot;name&quot;:&quot;isEdit&quot;,&quot;value&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;popupTitle&quot;,&quot;value&quot;:&quot;Edit Note&quot;}]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
       &lt;EventName&gt;preinit&lt;/EventName&gt;
-      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;}&lt;/MetadataJson&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;PreInit.CheckEditMode&quot;,&quot;PAP_GeneratedCondition&quot;:&quot;!string.IsNullOrWhiteSpace([QueryString:NoteId=])&quot;}&lt;/MetadataJson&gt;
       &lt;Metadata&gt;
         &lt;PAP_InternalIdentifier&gt;PreInit.CheckEditMode&lt;/PAP_InternalIdentifier&gt;
+        &lt;PAP_GeneratedCondition&gt;!string.IsNullOrWhiteSpace([QueryString:NoteId=])&lt;/PAP_GeneratedCondition&gt;
       &lt;/Metadata&gt;
     &lt;/ActionInfo&gt;
     &lt;ActionInfo&gt;
@@ -451,7 +448,7 @@
       &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
       &lt;Condition&gt;[h_isEdit] &amp;amp;&amp;amp; ![HasRole:Admins] &amp;amp;&amp;amp; ![HasRole:CitizenDevelopers] &amp;amp;&amp;amp; ![HasRole:HelpAgents] &amp;amp;&amp;amp; ![HasRole:Low-CodeEngineer] &amp;amp;&amp;amp; ![HasRole:Managers] &amp;amp;&amp;amp; ![HasRole:Users]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.483&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;Message&quot;:&quot;You are not allowed to edit items.&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -466,7 +463,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.UpdateEntity.4e7e24a2-dfef-4039-b269-814033d48507&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.45&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:NoteId=]&quot;,&quot;Subject&quot;:&quot;[p_Subject]&quot;,&quot;Note&quot;:&quot;[p_Note]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -482,7 +479,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;PlantAnApp.CreateEntity.4e7e24a2-dfef-4039-b269-814033d48507&lt;/ActionType&gt;
       &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.42&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.05&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;OutputToken&quot;:&quot;NewNoteId&quot;,&quot;Subject&quot;:&quot;[p_Subject]&quot;,&quot;Note&quot;:&quot;[p_Note]&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -499,7 +496,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.423&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.05&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Notes/Detail?NoteId=[NewNoteId]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -515,7 +512,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.453&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;4c0d3c18-ef78-452d-b136-f846d6e7a906&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -531,7 +528,7 @@
       &lt;ActionType&gt;PlantAnApp.ReadEntity.4e7e24a2-dfef-4039-b269-814033d48507&lt;/ActionType&gt;
       &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
       &lt;Condition&gt;[isEdit]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.5&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;RecordId&quot;:&quot;[QueryString:NoteId=]&quot;,&quot;OutputToken&quot;:&quot;original&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -547,7 +544,7 @@
       &lt;ActionType&gt;InitActionFormAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition&gt;[QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.46&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:true,&quot;Expression&quot;:&quot;3bf3fc13-d29a-455a-a77a-5bfebb0defab&quot;,&quot;Value&quot;:&quot;&quot;,&quot;Parameters&quot;:{}},&quot;Params&quot;:[]}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -563,7 +560,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;Condition /&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.43&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.05&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;6325cb67-3952-4110-bdd0-9a1cedd38a37&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -578,7 +575,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.433&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.067&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;c50d0594-de67-4617-9e66-d1384885bfaf&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -594,7 +591,7 @@
       &lt;ActionType&gt;ShowToastAndContinue&lt;/ActionType&gt;
       &lt;OrderIndex&gt;4&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.463&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;AllowToastClose&quot;:true,&quot;Heading&quot;:&quot;Success&quot;,&quot;Icon&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;success&quot;,&quot;Parameters&quot;:{}},&quot;Transition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;slide&quot;,&quot;Parameters&quot;:{}},&quot;HideTime&quot;:10000,&quot;ToastPosition&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;top-right&quot;,&quot;Parameters&quot;:{}},&quot;Stack&quot;:3,&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;Your data was saved&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=\&quot;//[Portal:url]/Notes/Detail?NoteId=[QueryString:NoteId=]\&quot;&amp;gt;View details&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&quot;,&quot;ShowLoader&quot;:true,&quot;LoaderColor&quot;:&quot;#FFFF00&quot;}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -610,7 +607,7 @@
       &lt;ActionType&gt;RefreshGrid&lt;/ActionType&gt;
       &lt;OrderIndex&gt;5&lt;/OrderIndex&gt;
       &lt;Condition&gt;![QueryString:detailPage=false]&lt;/Condition&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.47&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;6325cb67-3952-4110-bdd0-9a1cedd38a37&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
@@ -625,7 +622,7 @@
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
       &lt;ActionType&gt;CloseAFPopup&lt;/ActionType&gt;
       &lt;OrderIndex&gt;6&lt;/OrderIndex&gt;
-      &lt;LastModified&gt;2021-11-03T11:12:53.473&lt;/LastModified&gt;
+      &lt;LastModified&gt;2022-04-15T11:31:39.083&lt;/LastModified&gt;
       &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
       &lt;ActionData&gt;{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;c50d0594-de67-4617-9e66-d1384885bfaf&quot;,&quot;Parameters&quot;:{}}}&lt;/ActionData&gt;
       &lt;ModuleId&gt;446&lt;/ModuleId&gt;
