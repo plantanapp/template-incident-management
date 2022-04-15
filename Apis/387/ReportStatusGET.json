@@ -1,0 +1,41 @@
+{
+  "Name": "ReportStatus",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [],
+  "Actions": [
+    {
+      "ActionType": "LoadEntitiesFromSql",
+      "OrderIndex": 0,
+      "Parameters": {
+        "ConnectionString": "",
+        "SqlQuery": "select S.name as statusName, count(s.id) as statusCnt from app.ticket t\ninner join app.status s on s.id = t.status\ngroup by s.Name",
+        "BindTokens": "",
+        "EntityName": "Data",
+        "ClearBeforeLoad": "",
+        "EntityProps": "",
+        "OnError": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "JsonEntityList",
+      "OrderIndex": 1,
+      "Parameters": {
+        "EntityName": "Data",
+        "HttpCode": "200 OK",
+        "Criteria": "",
+        "Headers": "",
+        "AllowJsonp": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
