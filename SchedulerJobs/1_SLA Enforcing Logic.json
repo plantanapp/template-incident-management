@@ -1,0 +1,66 @@
+{
+  "ApiId": "3b46c38ee6e16181c5fbe2",
+  "ContextPortal": 0,
+  "ContextUser": 1,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "SLA Enforcing Logic",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "RepeatInterval",
+      "Parameters": {
+        "Start": {
+          "Date": "",
+          "Time": "12:00:00AM"
+        },
+        "Interval": {
+          "Qty": 1,
+          "Unit": {
+            "Value": "Hours",
+            "IsExpression": false,
+            "Parameters": {}
+          }
+        },
+        "SkipIfRunning": "",
+        "OnMissfire": {
+          "Expression": "",
+          "Value": "FireNow",
+          "IsExpression": false,
+          "Parameters": {}
+        }
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.a8c2d6afcd2645b8a2d3dbf39aa61fdf",
+      "Description": "48 Hours passed so change to status SLA Passed 48h (Id:7) - Enforce on status New (1), Work in Progress (2), SLA Passed 24h (6)",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "Parameters": {
+        "InputHelpText": "",
+        "Status": "7",
+        "Hours": "48",
+        "StatusIdsToEnforceOn": "1,2,6",
+        "OutputHelpText": "",
+        "TicketsAffectedJSON": ""
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.a8c2d6afcd2645b8a2d3dbf39aa61fdf",
+      "Description": "24 Hours passed so change to status SLA Passed 24h (Id:6) - Enforce on status New (1), Work in Progress (2)",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 1,
+      "Parameters": {
+        "InputHelpText": "",
+        "Status": "6",
+        "Hours": "24",
+        "StatusIdsToEnforceOn": "1,2",
+        "OutputHelpText": "",
+        "TicketsAffectedJSON": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
