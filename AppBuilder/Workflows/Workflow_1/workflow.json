@@ -70,7 +70,7 @@
     }
   ],
   "Id": 1,
-  "UniqueId": "91681d36-8213-4874-869c-c7643de4dc1f",
+  "GlobalId": "91681d36-8213-4874-869c-c7643de4dc1f",
   "EnvironmentId": 1,
   "Name": "Log Ticket Activity",
   "Description": "Pass in active user and activity and activity is created and associated to ticket.",

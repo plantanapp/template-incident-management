@@ -59,7 +59,7 @@
     }
   ],
   "Id": 3,
-  "UniqueId": "d5ef6c67-92bb-4c78-9678-bebb99c74745",
+  "GlobalId": "d5ef6c67-92bb-4c78-9678-bebb99c74745",
   "EnvironmentId": 1,
   "Name": "Change Ticket Status",
   "Description": "Provide the Ticket and the new Status. Details are optional.",

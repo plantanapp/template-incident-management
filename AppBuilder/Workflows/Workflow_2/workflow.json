@@ -92,7 +92,7 @@
     }
   ],
   "Id": 2,
-  "UniqueId": "5df72652-d576-4c35-b2d1-c203cc0da26a",
+  "GlobalId": "5df72652-d576-4c35-b2d1-c203cc0da26a",
   "EnvironmentId": 1,
   "Name": "Add Field Updates Activity",
   "Description": "Pass in New Field Values to add an activity showing the updates",

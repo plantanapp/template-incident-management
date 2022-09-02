@@ -1,7 +1,7 @@
 [
   {
     "Id": 17,
-    "UniqueId": "773dfed5-8c57-4d39-9058-536c5d012aca",
+    "GlobalId": "773dfed5-8c57-4d39-9058-536c5d012aca",
     "EntityVersionId": 9,
     "Name": "Subject",
     "Type": {
@@ -24,7 +24,7 @@
   },
   {
     "Id": 18,
-    "UniqueId": "74a4087c-7e0f-4439-ac74-0d5661bbec30",
+    "GlobalId": "74a4087c-7e0f-4439-ac74-0d5661bbec30",
     "EntityVersionId": 9,
     "Name": "Details",
     "Type": {
@@ -47,7 +47,7 @@
   },
   {
     "Id": 19,
-    "UniqueId": "0900b82d-70ad-4388-8383-2919e7363636",
+    "GlobalId": "0900b82d-70ad-4388-8383-2919e7363636",
     "EntityVersionId": 9,
     "Name": "First Name",
     "Type": {
@@ -70,7 +70,7 @@
   },
   {
     "Id": 20,
-    "UniqueId": "b967a414-66a2-4b43-9bc2-182bb9954036",
+    "GlobalId": "b967a414-66a2-4b43-9bc2-182bb9954036",
     "EntityVersionId": 9,
     "Name": "Last Name",
     "Type": {
@@ -93,7 +93,7 @@
   },
   {
     "Id": 21,
-    "UniqueId": "84186cb4-a988-475a-99cc-2ef74d81d344",
+    "GlobalId": "84186cb4-a988-475a-99cc-2ef74d81d344",
     "EntityVersionId": 9,
     "Name": "Email",
     "Type": {
@@ -116,7 +116,7 @@
   },
   {
     "Id": 22,
-    "UniqueId": "fc9a60b9-97fd-4000-9fbd-c29fc91e83ee",
+    "GlobalId": "fc9a60b9-97fd-4000-9fbd-c29fc91e83ee",
     "EntityVersionId": 9,
     "Name": "Phone",
     "Type": {
@@ -139,7 +139,7 @@
   },
   {
     "Id": 23,
-    "UniqueId": "9e66feef-3dbf-441c-bded-27d7e48f5ce9",
+    "GlobalId": "9e66feef-3dbf-441c-bded-27d7e48f5ce9",
     "EntityVersionId": 9,
     "Name": "Status",
     "Type": {
@@ -162,7 +162,7 @@
   },
   {
     "Id": 24,
-    "UniqueId": "5eaffb89-a4ff-46f8-b53a-bdd7c8d811ca",
+    "GlobalId": "5eaffb89-a4ff-46f8-b53a-bdd7c8d811ca",
     "EntityVersionId": 9,
     "Name": "Support Agent",
     "Type": {
