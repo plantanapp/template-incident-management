@@ -1,7 +1,7 @@
 [
   {
     "Id": 10,
-    "UniqueId": "20d5c65e-ed6d-457d-abb3-c415753f8b36",
+    "GlobalId": "20d5c65e-ed6d-457d-abb3-c415753f8b36",
     "EntityVersionId": 6,
     "Name": "User",
     "Type": {
@@ -24,7 +24,7 @@
   },
   {
     "Id": 11,
-    "UniqueId": "5b02b4b0-2ac2-4d78-82ca-70a5fb666bb0",
+    "GlobalId": "5b02b4b0-2ac2-4d78-82ca-70a5fb666bb0",
     "EntityVersionId": 6,
     "Name": "Name",
     "Type": {
@@ -47,7 +47,7 @@
   },
   {
     "Id": 12,
-    "UniqueId": "5dcd1403-6f22-473b-91a1-e52a4473b43e",
+    "GlobalId": "5dcd1403-6f22-473b-91a1-e52a4473b43e",
     "EntityVersionId": 6,
     "Name": "Details",
     "Type": {
@@ -70,7 +70,7 @@
   },
   {
     "Id": 13,
-    "UniqueId": "70e7d086-517f-4df0-89e1-a15267b842b6",
+    "GlobalId": "70e7d086-517f-4df0-89e1-a15267b842b6",
     "EntityVersionId": 6,
     "Name": "Type",
     "Type": {

@@ -1,7 +1,7 @@
 [
   {
     "Id": 14,
-    "UniqueId": "3705faec-c82d-4863-91f2-8fe393b5db5a",
+    "GlobalId": "3705faec-c82d-4863-91f2-8fe393b5db5a",
     "EntityVersionId": 7,
     "Name": "Subject",
     "Type": {
@@ -24,7 +24,7 @@
   },
   {
     "Id": 15,
-    "UniqueId": "69286c41-ea9b-48f5-bddc-e1d559ee2c8d",
+    "GlobalId": "69286c41-ea9b-48f5-bddc-e1d559ee2c8d",
     "EntityVersionId": 7,
     "Name": "Note",
     "Type": {

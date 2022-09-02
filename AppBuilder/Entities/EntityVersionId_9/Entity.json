@@ -9,7 +9,7 @@
   "Properties": null,
   "RolePermissions": null,
   "Id": 9,
-  "UniqueId": "69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
+  "GlobalId": "69e2f7f9-9318-4f99-b4be-57f0b6c672c3",
   "VersionId": 9,
   "EntityTabId": 62,
   "Name": "Ticket",

@@ -9,7 +9,7 @@
   "Properties": null,
   "RolePermissions": null,
   "Id": 8,
-  "UniqueId": "002efa19-dbdb-4649-8fbb-4bf4a91de9e3",
+  "GlobalId": "002efa19-dbdb-4649-8fbb-4bf4a91de9e3",
   "VersionId": 8,
   "EntityTabId": 64,
   "Name": "Status",

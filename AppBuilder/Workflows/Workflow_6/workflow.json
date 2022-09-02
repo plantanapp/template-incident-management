@@ -25,7 +25,7 @@
   ],
   "OutputFields": [],
   "Id": 6,
-  "UniqueId": "395fdc33-a84b-4b11-a4c0-aa99c8e3eac5",
+  "GlobalId": "395fdc33-a84b-4b11-a4c0-aa99c8e3eac5",
   "EnvironmentId": 1,
   "Name": "Notify Support Agents",
   "Description": "Pass in a subject and body details parameters to send an email to all users in the Support Agents role.",

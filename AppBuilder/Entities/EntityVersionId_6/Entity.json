@@ -9,7 +9,7 @@
   "Properties": null,
   "RolePermissions": null,
   "Id": 6,
-  "UniqueId": "2ade721a-ae65-449c-b61a-1c4955901aeb",
+  "GlobalId": "2ade721a-ae65-449c-b61a-1c4955901aeb",
   "VersionId": 6,
   "EntityTabId": 54,
   "Name": "Activity",

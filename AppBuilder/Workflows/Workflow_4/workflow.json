@@ -48,7 +48,7 @@
     }
   ],
   "Id": 4,
-  "UniqueId": "a8c2d6af-cd26-45b8-a2d3-dbf39aa61fdf",
+  "GlobalId": "a8c2d6af-cd26-45b8-a2d3-dbf39aa61fdf",
   "EnvironmentId": 1,
   "Name": "Enforce SLA",
   "Description": "Specify the new status of a ticket that needs to change automatically after a number of hours. Also Specify status ids comma separated, so the workflow only checks tickets in that status.",

@@ -1,7 +1,7 @@
 [
   {
     "Id": 7,
-    "UniqueId": "e1ec71ae-37e1-4bae-9eb1-cacc441aeeb7",
+    "GlobalId": "e1ec71ae-37e1-4bae-9eb1-cacc441aeeb7",
     "EntityVersionId": 5,
     "Name": "Name",
     "Type": {
@@ -24,7 +24,7 @@
   },
   {
     "Id": 8,
-    "UniqueId": "d4cae6a4-647e-4644-a1e3-87124bec3716",
+    "GlobalId": "d4cae6a4-647e-4644-a1e3-87124bec3716",
     "EntityVersionId": 5,
     "Name": "Activity Code",
     "Type": {
@@ -47,7 +47,7 @@
   },
   {
     "Id": 9,
-    "UniqueId": "af0973fa-b902-42c8-96df-0075954368ad",
+    "GlobalId": "af0973fa-b902-42c8-96df-0075954368ad",
     "EntityVersionId": 5,
     "Name": "Description",
     "Type": {
